@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Webshop</title>
+    <link rel="stylesheet" href="stilus.css">
+    <script src="kod.js"></script>
+</head>
+<body>
+    <div id="kinalat">
+        <table>
+            <tr>
+                <th>Termék megnevezése</th>
+                <th>Termék képe</th>
+            </tr>
+            <tr class="termekek" onmouseover="nagyitKep('RAM.jpg')" onmouseout="visszaKep()" onclick="kivalaszt('HyperX Predator 16GB (4x4GB) DDR4 3200MHz HX432C16PB3K4/16')">
+                <td>HyperX Predator 16GB (4x4GB) DDR4 3200MHz HX432C16PB3K4/16</td>
+                <td><img src="RAM.jpg" class="kiskep"></td>
+            </tr>
+            <tr class="termekek" onmouseover="nagyitKep('monitor.jpg')" onmouseout="visszaKep()" onclick="kivalaszt('LG 24MP59G-P Gamer Monitor')">
+                <td>LG 24MP59G-P Gamer Monitor</td>
+                <td><img src="monitor.jpg" class="kiskep"></td>
+            </tr>
+            <tr class="termekek" onmouseover="nagyitKep('HDD.jpg')" onmouseout="visszaKep()" onclick="kivalaszt('WD Red 3.5&quot; 2TB 5400rpm 64MB SATA3 WD20EFRX')">
+                <td>WD Red 3.5" 2TB 5400rpm 64MB SATA3 WD20EFRX</td>
+                <td><img src="HDD.jpg" class="kiskep"></td>
+            </tr>
+            <tr class="termekek" onmouseover="nagyitKep('SSD.jpg')" onmouseout="visszaKep()" onclick="kivalaszt('Samsung 970 EVO 500GB M.2 PCIe MZ-V7E500BW')">
+                <td>Samsung 970 EVO 500GB M.2 PCIe MZ-V7E500BW</td>
+                <td><img src="SSD.jpg" class="kiskep"></td>
+            </tr>
+            <tr class="termekek" onmouseover="nagyitKep('tap.jpg')" onmouseout="visszaKep()" onclick="kivalaszt('Chieftec Smart 500W (GPS-500A8)')">
+                <td>Chieftec Smart 500W (GPS-500A8)</td>
+                <td><img src="tap.jpg" class="kiskep"></td>
+            </tr>
+        </table>    
+    </div>
+
+    <div id="kep">
+        <img id="nagykep" src="ures.jpg">
+    </div>
+
+    <div id="kosar">
+        <h2>Kosár tartalma:</h2>
+    </div>  
+</body>
+</html>
