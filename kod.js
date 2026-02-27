@@ -6,10 +6,18 @@ function visszaKep() {
     document.getElementById("nagykep").src = "ures.jpg";
 }
 
-function kivalaszt(melyikTermek) {
-    let db = prompt("Hány darabot szeretne?");
-    if (db != null && db != "")
-    {
-        document.getElementById("kosar").innerHTML += db + " db " + melyikTermek + "<br>";
+function szamol() 
+{
+    let arak = document.getElementsByClassName("ar");
+    let darabok = document.getElementsByTagName("input");
+    let reszek = document.getElementsByClassName("resz");
+    let vegosszeg = 0;
+    for (let i = 0; i < arak.length; i++) {
+        
+        let sorOsszeg = arak[i].innerHTML * darabok[i].value;
+        reszek[i].innerHTML = sorOsszeg;
+        vegosszeg += sorOsszeg;
     }
+
+    document.getElementById("osszesen").innerHTML = vegosszeg + " Ft";
 }
